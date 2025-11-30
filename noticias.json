@@ -1,0 +1,19 @@
+{
+  "noticias": [
+    {
+      "titulo": "Descuento del 20% en reformas de cocina",
+      "descripcion": "Aprovecha nuestra promoción especial para renovar tu cocina con los mejores materiales y un acabado profesional.",
+      "fecha": "31-12-2025"
+    },
+    {
+      "titulo": "Rebaja en trabajos de pintura interior",
+      "descripcion": "Este mes ofrecemos un 15% de descuento en todos los trabajos de pintura y decoración para tu hogar.",
+      "fecha": "30-11-2025"
+    },
+    {
+      "titulo": "Promoción en reformas de baño",
+      "descripcion": "Transforma tu baño con un 10% de descuento en instalaciones, azulejos y sanitarios.",
+      "fecha": "15-01-2026"
+    }
+  ]
+}

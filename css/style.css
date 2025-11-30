@@ -1,0 +1,169 @@
+/* Estilo gerneral para el body */
+*{box-sizing: border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111111;
+  background:linear-gradient(180deg,#f5f5f6, #fff 60%);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+  font-size:16px;
+}
+
+/* Contenedor central */
+header, section, footer{
+  max-width: 1200px;
+  margin:0 auto;
+  padding:1rem 1.25rem;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 1.25rem;
+  padding:1rem 1.25rem;
+  background:linear-gradient(90deg, #c8102e 0%, #9b081f 100%);
+  color: #ffffff;
+  border-bottom-left-radius:0;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 6px 18px rgba(17,17,17,0.12);
+}
+
+/* Logo */
+#logoempresa{
+  height:56px;
+  width:auto;
+  border-radius:8px;
+  background: #ffffff;
+  padding:4px;
+  object-fit:contain;
+}
+
+/* Menú de Navegación */
+nav{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+}
+nav a{
+  color: #ffffff;
+  text-decoration:none;
+  padding:.5rem .75rem;
+  border-radius:8px;
+  font-weight:600;
+  letter-spacing:.2px;
+  transition:background .18s ease, transform .12s ease;
+}
+nav a:hover{
+  background:rgba(255,255,255,0.08); 
+  transform:translateY(-1px)
+}
+nav a.active{
+  background: #ffffff; 
+  color: #c8102e; 
+  box-shadow:0 6px 14px rgba(0,0,0,0.08)
+}
+
+/* SECCIONES */
+section{
+  padding:1.6rem 1.25rem;
+}
+
+.servicio{
+  background: #ffffff;
+  border-radius: 12px;
+  padding:1.25rem;
+  box-shadow: 0 6px 18px rgba(17,17,17,0.12);
+  margin-bottom:1rem;
+}
+
+.servicio h2{
+  margin-top:0;
+  color: #9b081f;
+  font-size:1.35rem;
+}
+
+.servicio p{
+  margin:.55rem 0;
+  color:#222;
+}
+
+/* Titulares llamativos */
+h2{font-family:inherit}
+
+/* NOTICIAS / PROMOCIONES */
+#noticia{
+  border-radius: 12px;
+  overflow:hidden;
+  background:linear-gradient(180deg, rgba(200,16,40,0.06), rgba(255,255,255,0.02));
+  padding:0;
+}
+#noticia h2{
+  margin:0;
+  padding:.9rem 1.25rem;
+  background: #c8102e;
+  color: #ffffff;
+}
+#contenedor-noticias{
+  padding:1rem 1.25rem;
+}
+/* FOOTER */
+footer{
+  margin-top:1.25rem;
+  padding:1.25rem;
+  background:#111111;
+  color:#ffffff;
+  border-top-left-radius:12px;
+  border-top-right-radius:12px;
+}
+footer b{color:#c8102e}
+footer a{display:inline-block; margin-right:.5rem}
+footer img{height:28px; width:auto; vertical-align:middle}
+footer h3{margin:.65rem 0 .15rem 0}
+
+/* Galería */
+img{max-width:100%; height:auto; display:block}
+.galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;margin-top:1rem}
+.galeria img{cursor:pointer;border-radius:12px;box-shadow:0 6px 18px rgba(17,17,17,0.12);transition:transform .18s ease}
+.galeria img:hover{transform:scale(1.03)}
+
+/* Lightbox */
+#lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);display:none;justify-content:center;align-items:center;z-index:9999}
+#lightbox img{max-width:90%;max-height:90%;border-radius:12px;box-shadow:0 6px 18px rgba(17,17,17,0.12)}
+
+/* Contacto - Mapa */
+#mapa{width:100%;height:420px;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(17,17,17,0.12);margin-top:1rem}
+
+/* Formularios */
+form{background:#ffffff;padding:1.5rem;border-radius:12px;box-shadow:0 6px 18px rgba(17,17,17,0.12);margin-top:1rem}
+fieldset{border:2px solid rgba(200,16,40,0.15);border-radius:12px;padding:1rem;margin-bottom:1rem}
+legend{color: #9b081f;font-weight:700;padding:0 .4rem}
+label{display:block;font-weight:600;margin-top:.6rem;color: #111111}
+input,select,output{width:100%;padding:.55rem;border-radius:8px;border:1px solid rgba(0,0,0,0.2);margin-top:.3rem;font-size:1rem}
+output{background:#fafafa;font-weight:700}
+
+/* Botones formulario */
+.botones{text-align:center;margin-top:1rem;display:flex;gap:1rem;justify-content:center}
+button{padding:.6rem 1.2rem;border:none;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;background: #c8102e;color: #ffffff;box-shadow: 0 6px 18px rgba(17,17,17,0.12);transition:transform .15s ease}
+button:hover{transform:translateY(-2px)}
+button[type="reset"]{background: #111111}
+
+/* Ajustes extra */
+section h1, section h2{text-align:left;margin-bottom:.8rem;color: #9b081f}
+
+/* Secciones y tarjetas de servicio */
+.servicio{background:#ffffff;padding:1.5rem;border-radius:12px;box-shadow: 0 6px 18px rgba(17,17,17,0.12);margin-bottom:1.5rem}
+.servicio h2{color: #9b081f;margin-bottom:.6rem}
+.servicio p{margin-bottom:.6rem;color: #111111}
+
+/* Noticias */
+#noticia{background:#ffffff;padding:1.5rem;border-radius:12px;box-shadow: 0 6px 18px rgba(17,17,17,0.12);margin-top:1.5rem}
+#contenedor-noticias p{padding:.6rem 0}
+
+/* Ajustes generales sección */
+section{padding:1rem 2rem}
+section h2{text-align:left;margin-bottom:1rem;color: #9b081f}

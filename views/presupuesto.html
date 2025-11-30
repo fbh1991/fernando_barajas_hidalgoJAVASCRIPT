@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reformas FBH</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!--Cabecera de la web-->
+    <header>
+        <div>
+            <img id="logoempresa" src="../images/logoempresa.png" alt="logo empresa">
+        </div>
+        <div>
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="galeria.html">Galería</a>
+                <a href="presupuesto.html" class="active">Presupuesto</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <h2>Formulario de presupuesto</h2>
+        
+        <form id="formPresupuesto">
+            <!--Datos de contacto-->
+            <fieldset>
+                <legend><strong>Datos de contacto</strong></legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" maxlength="15" required>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" maxlength="40" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" maxlength="9" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="text" id="email" required>
+            </fieldset>
+
+            <!--Presupuesto-->
+            <fieldset>
+                <legend><strong>Presupuesto</strong></legend>
+
+                <!--Producto-->
+                <label for="producto">Producto:</label>
+                <select id="producto">
+                    <option value="0">Seleccione producto</option>
+                    <option value="1000">Reforma Baño - 1000 €</option>
+                    <option value="1500">Reforma Cocina - 1500 €</option>
+                    <option value="1800">Reforma Parquet - 1800 €</option>
+                    <option value="600">Climatización - 600 €</option>
+                    <option value="500">Interiorismo - 500 €</option>
+                    <option value="6000">Rehabilitación de edificios - 6000 €</option>
+                </select>
+
+                <!--Plazo-->
+                <label for="plazo">Plazo (meses):</label>
+                <input type="number" id="plazo" min="1" max="18" value="1">
+
+                <!--Extras-->
+                <label>Extras:</label>
+                <input type="checkbox" id="extra1" value="400">Instalación (+400 €)<br>
+                <input type="checkbox" id="extra2" value="300">Mantenimiento (+300 €)<br>
+                <input type="checkbox" id="extra3" value="200">Envío rápido (+200 €)<br><br>
+
+                <!--Resultado-->
+                <label>Presupuesto total:</label><br>
+                <output id="resultado" class="resultado">0 €</output>
+            </fieldset>
+
+            <!--Condiciones-->
+            <fieldset>
+                <input type="checkbox" id="condiciones"> Acepto las condiciones de privacidad
+            </fieldset>
+
+            <div class="botones">
+                <button type="submit">Enviar presupuesto</button>
+                <button type="reset">Restablecer</button>
+            </div>
+        </form>
+    </section>
+    <!--Pié de página de la web-->
+    <footer>
+        &copy;<b>Reformas FBH</b> :: Todos los derechos reservados
+        <h3>Dirección</h3>
+        <p>C/ de Bravo Murillo 35, Madrid</p>
+        <h3>Síguenos en RRSS</h3>
+        <p>
+            <a href="https://es-es.facebook.com/" target="_blank"><img src="../images/logofacebook.png" alt="logo facebook"></a>
+            <a href="https://x.com/" target="_blank"><img src="../images/logotwitter.png" alt="logo twitter"></a>
+            <a href="https://about.instagram.com/es-la/brand" target="_blank"><img src="../images/logoinstagram.png" alt="logo instagram"></a>
+        </p>
+    </footer>
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>

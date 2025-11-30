@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reformas FBH</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!--Cabecera de la web-->
+    <header>
+        <div>
+            <img id="logoempresa" src="../images/logoempresa.png" alt="logo empresa">
+        </div>
+        <div>
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="galeria.html">Galería</a>
+                <a href="presupuesto.html">Presupuesto</a>
+                <a href="contacto.html" class="active">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <!--Mapa con la ubicación de la empresa-->
+    <section>
+        <h2>Ubicación y contacto</h2>
+        <div>
+            <h3>Información</h3>
+            <p>Reformas FBH S.L.<br>C/ de Bravo Murillo 35, Madrid<br>Tlfn: 123456789<br>Email: reformasfbh@gmail.com</p>
+        </div>
+        <!--Botón que calcula la ruta desde nuestra ubicación-->
+        <button id="btnMiUbicacion" class="btn">Calcular ruta desde mi ubicación</button>
+        <div id="mapa"></div>
+
+        <!-- Contenedor para mostrar datos de la ruta -->
+        <p id="infoRuta" style="margin-top:10px; font-weight:bold;"></p>
+
+    </section>
+    <!--Pié de página de la web-->
+    <footer>
+        &copy;<b>Reformas FBH</b> :: Todos los derechos reservados
+        <h3>Dirección</h3>
+        <p>C/ de Bravo Murillo 35, Madrid</p>
+        <h3>Síguenos en RRSS</h3>
+        <p>
+            <a href="https://es-es.facebook.com/" target="_blank"><img src="../images/logofacebook.png" alt="logo facebook"></a>
+            <a href="https://x.com/" target="_blank"><img src="../images/logotwitter.png" alt="logo twitter"></a>
+            <a href="https://about.instagram.com/es-la/brand" target="_blank"><img src="../images/logoinstagram.png" alt="logo instagram"></a>
+        </p>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="    crossorigin=""> </script>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>
